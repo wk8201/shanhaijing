@@ -15,8 +15,8 @@ const routes: Array<RouteRecordRaw> = [
 
 // 创建路由实例
 const router = createRouter({
-  // 使用空字符串作为基础路径，让Vercel自动处理
-  history: createWebHistory("/"),
+  // 使用相对路径以支持GitHub Pages部署
+  history: createWebHistory(process.env.BASE_URL || "/"),
   routes,
 });
 
