@@ -11,6 +11,11 @@
     <!-- 轮播图组件 -->
     <Carousel />
 
+    <!-- 自定义文本信息 -->
+    <div class="glass-text-container py-6 px-4 mx-4 rounded-xl">
+      <div class="glass-text text-center">菲菲你好呀，这是一个全新的网站我称它为山海经-荒原</div>
+    </div>
+
     <!-- 页面内容区域 -->
     <div class="content-container px-6 py-8">
       <h1 class="text-2xl font-bold text-gray-800 mb-6">欢迎来到首页</h1>
@@ -166,6 +171,27 @@ onUnmounted(() => {
   min-height: 200vh; /* 确保页面有足够高度可以滚动 */
 }
 
+/* 毛玻璃效果文本容器样式 */
+.glass-text-container {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin: 10px;
+}
+
+.glass-text {
+  font-size: 1.25rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #00bcd4, #4caf50);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding: 10px;
+}
+
 /* 移动端优化 */
 @media (max-width: 768px) {
   #pullRefreshIndicator {
@@ -184,6 +210,10 @@ onUnmounted(() => {
   
   #refreshText {
     font-size: 13px !important;
+  }
+  
+  .glass-text {
+    font-size: 1.1rem !important;
   }
 }
 
