@@ -15,8 +15,8 @@ const routes: Array<RouteRecordRaw> = [
 
 // 创建路由实例
 const router = createRouter({
-  // 使用相对路径以支持GitHub Pages部署
-  history: createWebHistory(process.env.BASE_URL || "/"),
+  // 使用固定的base路径，与vite.config.ts中的配置保持一致
+  history: createWebHistory(import.meta.env.BASE_URL || "/"),
   routes,
 });
 

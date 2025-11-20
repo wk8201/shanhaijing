@@ -44,8 +44,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          # 上传dist目录的内容
-          path: './dist'
+          # 已更新为docs目录
+          path: './docs'
       
       # 部署到GitHub Pages
       - name: Deploy to GitHub Pages

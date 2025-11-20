@@ -5,12 +5,15 @@ import { resolve } from 'path'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  // GitHub Pages部署时需要设置正确的base路径
-  // 请将此处替换为您的GitHub仓库名称，格式为'/仓库名称/'
-  base: '/sh-ancient/',
+  // 已更新为正确的GitHub仓库名称'shanhaijing'
+  base: '/shanhaijing/',
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src')
     }
+  },
+  // 配置输出目录为docs，用于GitHub Pages部署
+  build: {
+    outDir: 'docs'
   }
 })
