@@ -13,7 +13,7 @@
 
     <!-- 自定义文本信息 -->
     <div class="glass-text-container py-6 px-4 mx-4 rounded-xl">
-      <div class="glass-text text-center">菲菲你好呀，这是一个全新的网站我称它为山海经-荒原</div>
+      <div class="glass-text text-center">夏唯一 ，若凡，老吕，大佐，梅鸡你们好，我是山海小助手-阿鼓，在这里你还有你的小伙伴们将开启你们的山海之旅  -----北冀</div>
     </div>
 
     <!-- 页面内容区域 -->
@@ -183,14 +183,14 @@ onUnmounted(() => {
 }
 
 .glass-text {
-  font-size: 1.25rem;
-  font-weight: 600;
-  background: linear-gradient(135deg, #00bcd4, #4caf50);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  padding: 10px;
-}
+    font-size: 1.25rem;
+    font-weight: 600;
+    background: linear-gradient(135deg, #00bcd4, #4caf50, #9c27b0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    padding: 10px;
+  }
 
 /* 移动端优化 */
 @media (max-width: 768px) {
